@@ -37,6 +37,7 @@
         </div>
     </body>
     <script defer>
+        window.addEventListener('message', e => console.log(e.data), false);
         let iframe = document.getElementById('6x4');
         iframe.onload = () => {
             iframe.contentWindow.postMessage({
